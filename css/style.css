@@ -15,9 +15,12 @@
   --fw-reg: 400;
   --fw-bold: 900;
 
-  --clr-light: #fff;
-  --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  /* --clr-light: #fff; */
+  --clr-light: #e8eeea;
+  /* --clr-dark: #303030; */
+  --clr-dark: #3d4e57;
+  /* --clr-accent: #16e0bd; */
+  --clr-accent: #6a90b4;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -412,11 +415,14 @@ h3 {
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 15px;
+  row-gap: 15px;
 }
 
 .portfolio__item {
   background: var(--clr-accent);
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .portfolio__img {
